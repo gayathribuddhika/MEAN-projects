@@ -1,1 +1,10 @@
-<p>user2 component works!</p>
+<h4>user2 component works!</h4>
+<p *ngFor = "let x of stu">{{x}}</p>
+
+<input type="text" name="name" #txt>
+<button type="submit" (click) = "getval(txt)">Click</button>
+
+<br><br>
+
+<button [disabled] = disabled>submit</button> <br><br>  <!-- property binding -->
+<button disabled = {{disabled}}>submit</button>

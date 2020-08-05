@@ -1,3 +1,13 @@
 <h5>{{ title }}</h5>
-<p>users component works!</p>
+<h3>*ngIf in Angular</h3>
+<p *ngIf="condition then ifBlock else elseBlock">Hello {{name}}</p>  <!-- display hello gayathri -->
+<p *ngIf="!condition">Hello {{name}}</p> <!-- condition is false.so display nothing -->
+<p *ngIf = true>Hello</p> <!-- if true -> display hello if flase -> display nothing -->
 
+<p *ngIf = "name == 'Buddhika' ; then ifBlock else elseBlock"></p>
+<ng-template #ifBlock>
+    <p>If Block (condition is true)</p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>Else Block (condition is flase)</p>
+</ng-template>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,14 @@ export class AppComponent {
     name: "gayathri",
     age: 26,
     address: "baddegama"
-  }
+  };
+  info= [
+    {name: "gayathri", email: "gayathri@gmail.com"},
+    {name: "tharushi", email: "tharushi@gmail.com"},
+    {name: "ramya", email: "ramya@gmail.com"},
+    {name: "jayalath", email: "jayalath@gmail.com"},
+  ];
+  color = "yellow";
 
   show(){
     alert("Hello Gayathri");
@@ -21,5 +29,9 @@ export class AppComponent {
 
   argfunction(x){
     alert(x);
+  }
+
+  onSubmit(data){
+    console.warn(data);
   }
 }

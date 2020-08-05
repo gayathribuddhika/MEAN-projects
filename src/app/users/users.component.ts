@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
   title = "data Binding example";
+  name = "Gayathri";
+  condition = true;
 
   constructor() { }
 

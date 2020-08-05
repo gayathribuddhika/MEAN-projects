@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user2.component.css']
 })
 export class User2Component implements OnInit {
+  stu = ["gayathri, dinithi, charuni"];
+  disabled = true;
+
+  getval(name){
+    alert(name.value);
+  }
 
   constructor() { }
 
